@@ -1,0 +1,10 @@
+views\LoginView.class
+views\PostLoginView.class
+views\FooterView.class
+connectionpool\ConnectionPool.class
+views\MainView.class
+crud\CRUD.class
+views\HomeView.class
+views\RegisterView.class
+views\HeaderView.class
+views\MenuView.class

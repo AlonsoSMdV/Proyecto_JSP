@@ -1,0 +1,80 @@
+html,   body{
+  width: 100%;
+  height: 100vh;
+  background: #343a40; /* Fallback para navegadores que no soportan gradientes */
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.form-control{
+  color:  transparent !important;
+}
+
+.login-form .btn {
+  width: 100%;
+}
+
+.error{
+  font-size:1rem;
+  color:rgba(255, 0, 0, 0.863);
+}
+
+.mr-3{
+  margin-right: 0.75px;
+}
+.p-6{
+
+  padding-left: 400px;
+
+}
+
+.min-vh-100 {
+  min-height: 100vh; /* Altura mínima del 100% del viewport */
+  display: flex;
+  flex-direction: column;
+}
+
+.main-image{
+  width: auto;
+  background-size: cover;
+  background-image: url("../img/BlackjackBack.jpg");
+  position: relative;
+}
+
+.login-register-image{
+  width: auto;  
+  background-size: cover; /* Utiliza contain para asegurarte de que la imagen se ajuste dentro del contenedor sin distorsionarse */
+  background-position: center; /* Centra la imagen horizontalmente y verticalmente */
+  background-repeat: no-repeat;
+  background-image: url("../img/BlackjackBack2.jpg");
+  position: relative;
+}
+
+/* Utilizar flexbox en el contenedor del contenido */
+.flex-grow-wrapper {
+  flex-grow: 1; /* Permite que el contenedor se expanda */
+  display: flex;
+}
+
+/* Estilo para el menú lateral para que ocupe todo el espacio disponible */
+.menu-lateral {
+  flex-grow: 1; /* Permite que el menú lateral se expanda */
+  background-color: transparent; /* Color de fondo para el menú lateral */
+
+}
+
+.overlay {
+  position: absolute; /* Se posiciona absolutamente con respecto al contenedor padre */
+  top: 0;
+  left: 0;
+  width: 100%; /* O el ancho deseado */
+  height: 100%; /* O la altura deseada */
+  background-color: rgba(0, 0, 0, 0.7); /* Negro con una transparencia del 70% */
+  z-index: 1; /* Asegura que esté encima de la imagen de fondo */
+}
