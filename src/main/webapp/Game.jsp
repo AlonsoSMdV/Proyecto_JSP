@@ -184,19 +184,21 @@
         </form>
     </div>
 
-    <% if (plantarse || ValorJugador>21) {  %>
+<% if (plantarse || ValorJugador > 21) { %>
     <div class="valor">
-            <% if ((ValorJugador<=21 && ValorJugador>ValorCPU) || ValorCPU>21)  {
-                response.sendRedirect("findejuego.jsp?winner=1");
-
-            } else if (ValorJugador==ValorCPU) {
-                response.sendRedirect("playAgain.jsp?winner=3");
-    
-              } else {
-                response.sendRedirect("findejuego.jsp?winner=2");
-              } %>
-        </div>
-    <% } %> 
+        <% 
+            String redirectURL = "";
+            if ((ValorJugador <= 21 && ValorJugador > ValorCPU) || ValorCPU > 21) {
+                redirectURL = "findejuego.jsp?winner=1&valorJugador=" + ValorJugador + "&valorCPU=" + ValorCPU;
+            } else if (ValorJugador == ValorCPU) {
+                redirectURL = "playAgain.jsp?winner=3&valorJugador=" + ValorJugador + "&valorCPU=" + ValorCPU;
+            } else {
+                redirectURL = "findejuego.jsp?winner=2&valorJugador=" + ValorJugador + "&valorCPU=" + ValorCPU;
+            }
+            response.sendRedirect(redirectURL);
+        %>
+    </div>
+<% } %> 
 
 
     

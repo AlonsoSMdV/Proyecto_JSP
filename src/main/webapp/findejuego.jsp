@@ -27,6 +27,16 @@
         if(request.getParameter("winner") != null && request.getParameter("winner").length() > 0){
           ganador = Integer.parseInt(request.getParameter("winner"));
         }
+        int VJugador = 0;
+        if(request.getParameter("valorJugador") != null && request.getParameter("valorJugador").length() > 0){
+            VJugador = Integer.parseInt(request.getParameter("valorJugador"));
+        }
+
+        int VCPU = 0;
+        if(request.getParameter("valorCPU") != null && request.getParameter("valorCPU").length() > 0){
+            VCPU = Integer.parseInt(request.getParameter("valorCPU"));
+        }
+
         long wins = player.getWins();
         long loses = player.getLoses();
 
@@ -39,12 +49,13 @@
         Player newPlayerData = new Player(player.getId(), player.getName(), player.getSurname(), player.getPlayername(),wins, loses);
         if(players.updateWinsAndLoses(newPlayerData)==1){
             session.setAttribute("player", newPlayerData);
+            String redirectURL = "";
             if(ganador == 1){
-              response.sendRedirect("playAgain.jsp?winner=1");
+              redirectURL = "playAgain.jsp?winner=1&valorJugador=" + VJugador + "&valorCPU=" + VCPU;
             }else if(ganador == 2){
-              response.sendRedirect("playAgain.jsp?winner=2");
+              redirectURL = "playAgain.jsp?winner=2&valorJugador=" + VJugador + "&valorCPU=" + VCPU;
             }
-            
+            response.sendRedirect(redirectURL);
         }
         else
             response.sendRedirect("playAgain.jsp?error=No ha sido posible cambiar la información");

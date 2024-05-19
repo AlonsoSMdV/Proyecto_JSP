@@ -111,7 +111,7 @@
               <br><b>4 - Ganar o perder:</b><br>
               Si la mano del jugador tiene un valor más alto que la del crupier y no supera los 21 puntos, el jugador gana.<br>
               Si la mano del crupier supera los 21 puntos o es menor que la del jugador, el jugador gana.<br>
-              Si la mano del jugador supera los 21 puntos, el jugador pierde automáticamente.<br>
+              Si la mano del jugador supera los 21 puntos, el jugador pierde automáticamente, por lo que al no intervenir el crupier su puntos estaran en 0.<br>
               En caso de empate se considerara derrota</p>
               <div class="buttons">
                 <form method="post" action="Game.jsp" onsubmit="return comprobacionTokens();">

@@ -51,13 +51,27 @@
                 if(request.getParameter("winner") != null && request.getParameter("winner").length() > 0){
                     ganador = Integer.parseInt(request.getParameter("winner"));
                 }
-                if(ganador == 1){
-                    out.print("Enhorabuena!!! Has ganado");
-                } else if(ganador == 2){
-                    out.print("Lo siento, has perdido la partida.");
-                } else if(ganador == 3){
-                    out.print("Has empatado");
+                
+                int VJugador = 0;
+                if(request.getParameter("valorJugador") != null && request.getParameter("valorJugador").length() > 0){
+                    VJugador = Integer.parseInt(request.getParameter("valorJugador"));
                 }
+
+                int VCPU = 0;
+                if(request.getParameter("valorCPU") != null && request.getParameter("valorCPU").length() > 0){
+                    VCPU = Integer.parseInt(request.getParameter("valorCPU"));
+                }
+
+                String mensaje = "";
+                if(ganador == 1){
+                    mensaje = "Enhorabuena!!! Has ganado<br>Puntuación crupier = " + VCPU + "<br>Tu puntuación = " + VJugador;
+                } else if(ganador == 2){
+                    mensaje = "Lo siento, has perdido la partida.<br>Puntuación crupier = " + VCPU + "<br>Tu puntuación = " + VJugador;
+                } else if(ganador == 3){
+                    mensaje = "Has empatado<br>Puntuación crupier = " + VCPU + "<br>Tu puntuación = " + VJugador;
+                }
+
+                out.println(mensaje);
             %>
         </div>
         <div class="buttons ">
