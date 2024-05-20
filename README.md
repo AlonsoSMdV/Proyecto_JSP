@@ -7,4 +7,4 @@ dos botones uno para volver a jugar y otro para volver al inicio
 
 # Capturas
 
-![](CapturasREADME/Login.png)
+![Login](CapturasREADME/Login.png)
