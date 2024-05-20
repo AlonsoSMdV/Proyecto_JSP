@@ -92,3 +92,16 @@
 0:0:0:0:0:0:0:1 - - [19/May/2024:17:08:07 +0200] "GET /blackjackgame/playAgain.jsp?winner=1&valorJugador=19&valorCPU=22 HTTP/1.1" 200 2133 http-bio-8080-exec-7 5
 0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:12 +0200] "POST /blackjackgame/home.jsp HTTP/1.1" 200 6240 http-bio-8080-exec-3 34
 0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:15 +0200] "GET /blackjackgame/Instructions.jsp HTTP/1.1" 200 4770 http-bio-8080-exec-3 452
+0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:44 +0200] "GET /blackjackgame/Instructions.jsp HTTP/1.1" 200 4770 http-bio-8080-exec-3 29
+0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:47 +0200] "POST /blackjackgame/Game.jsp HTTP/1.1" 200 2624 http-bio-8080-exec-3 9
+0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:48 +0200] "POST /blackjackgame/Game.jsp HTTP/1.1" 200 2850 http-bio-8080-exec-3 3
+0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:48 +0200] "GET /blackjackgame/assets/img/26.png HTTP/1.1" 200 15150 http-bio-8080-exec-3 16
+0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:48 +0200] "GET /blackjackgame/assets/img/13.png HTTP/1.1" 200 22688 http-bio-8080-exec-8 20
+0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:50 +0200] "POST /blackjackgame/Game.jsp HTTP/1.1" 200 2905 http-bio-8080-exec-8 3
+0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:51 +0200] "POST /blackjackgame/Game.jsp HTTP/1.1" 200 2959 http-bio-8080-exec-8 5
+0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:51 +0200] "GET /blackjackgame/assets/img/23.png HTTP/1.1" 200 14931 http-bio-8080-exec-8 21
+0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:52 +0200] "POST /blackjackgame/Game.jsp HTTP/1.1" 200 3013 http-bio-8080-exec-8 2
+0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:54 +0200] "POST /blackjackgame/Game.jsp HTTP/1.1" 302 - http-bio-8080-exec-8 3
+0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:54 +0200] "GET /blackjackgame/findejuego.jsp?winner=2&valorJugador=18&valorCPU=19 HTTP/1.1" 302 - http-bio-8080-exec-8 16
+0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:54 +0200] "GET /blackjackgame/playAgain.jsp?winner=2&valorJugador=18&valorCPU=19 HTTP/1.1" 200 2146 http-bio-8080-exec-8 356
+0:0:0:0:0:0:0:1 - - [19/May/2024:17:09:57 +0200] "POST /blackjackgame/home.jsp HTTP/1.1" 200 6240 http-bio-8080-exec-8 30
