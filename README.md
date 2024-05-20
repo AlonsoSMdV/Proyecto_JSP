@@ -8,3 +8,13 @@ dos botones uno para volver a jugar y otro para volver al inicio
 # Capturas
 
 ![Login](CapturasREADME/Login.png)
+![Registro](CapturasREADME/Registro.png)
+![Inicio](CapturasREADME/InicioTablaUsuarios.png)
+![Instrucciones](CapturasREADME/Instrucciones.png)
+![Profile](CapturasREADME/Profile.png)
+![Juego Cartas No Mostradas](CapturasREADME/JuegoCartasNoMostradas.png)
+![Juego Cartas Mostradas](CapturasREADME/JuegoCartasMostradas.png)
+![Victoria](CapturasREADME/Victoria.png)
+![Derrota](CapturasREADME/Derrota.png)
+![Empate](CapturasREADME/Empate.png)
+
